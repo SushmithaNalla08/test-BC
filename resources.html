@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📚 Resources - Olympianz</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen text-black font-sans">
+    
+    <!-- ================= HEADER / TOP NAVIGATION ================= -->
+    <header class="relative z-50">
+        
+        <!-- Background Glow Effects -->
+        <div class="absolute inset-0 opacity-50 pointer-events-none">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-cyan-300 rounded-full filter blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-lime-300 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+        </div>
+
+        <!-- Main Header Content -->
+        <div class="relative container mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between">
+            
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-4 mb-6 md:mb-0 hover:opacity-80 transition">
+                <img src="logo.png" alt="Olympianz Logo" class="h-16 w-16 md:h-20 md:w-20 drop-shadow-lg">
+                <h1 class="text-4xl md:text-5xl font-extrabold gradient-text drop-shadow-2xl">
+                    Olympianz
+                </h1>
+            </a>
+
+            <!-- Navigation Bar -->
+            <nav class="py-4 px-10 mt-6 md:mt-0 shadow-2xl">
+                <ul class="flex flex-wrap justify-center gap-8 md:gap-12 text-lg font-medium">
+                    
+                    <li><a href="index.html" class="hover:text-lime-600 transition">Home</a></li>
+
+                    <!-- Products Dropdown -->
+                    <li class="relative group">
+                        <button class="hover:text-lime-600 transition flex items-center">
+                            Products
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+
+                        <div class="dropdown w-64 shadow-xl py-5 px-8 text-center">
+                            <a href="admin.html" class="block py-3 hover:text-lime-600 transition">Admin Dashboard</a>
+                            <a href="student.html" class="block py-3 hover:text-lime-600 transition">Student Dashboard</a>
+                            <a href="verify.html" class="block py-3 hover:text-lime-600 transition">Verifier</a>
+                        </div>
+                    </li>
+
+                    <li><a href="resources.html" class="hover:text-lime-600 transition">Resources</a></li>
+                    <li><a href="about.html" class="hover:text-lime-600 transition">About</a></li>
+                    <li><a href="community.html" class="hover:text-lime-600 transition">Community</a></li>
+                    <li><a href="faqs.html" class="hover:text-lime-600 transition">FAQ</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <div class="py-16 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-5xl font-bold gradient-text mb-4 text-center">📚 Resources</h2>
+            <p class="text-center text-lg text-gray-700 mb-16">Everything you need to get started with Olympianz</p>
+
+            <!-- Documentation -->
+            <div class="retro-card p-10 rounded-lg shadow-lg mb-8">
+                <h3 class="text-3xl font-bold gradient-text mb-6">📖 Documentation</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-br from-blue-100 to-cyan-100 p-6 rounded-lg border-2 border-gray-400">
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">Getting Started</h4>
+                        <p class="text-gray-700 mb-4">Learn the basics of the Olympianz certificate system and get up and running in minutes.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:underline">Read Guide →</a>
+                    </div>
+                    <div class="bg-gradient-to-br from-green-100 to-lime-100 p-6 rounded-lg border-2 border-gray-400">
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">Admin Guide</h4>
+                        <p class="text-gray-700 mb-4">Comprehensive guide for administrators to issue, manage, and revoke certificates.</p>
+                        <a href="#" class="text-green-600 font-semibold hover:underline">Read Guide →</a>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-100 to-pink-100 p-6 rounded-lg border-2 border-gray-400">
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">Student Guide</h4>
+                        <p class="text-gray-700 mb-4">Learn how to view, download, and share your digital credentials securely.</p>
+                        <a href="#" class="text-purple-600 font-semibold hover:underline">Read Guide →</a>
+                    </div>
+                    <div class="bg-gradient-to-br from-orange-100 to-red-100 p-6 rounded-lg border-2 border-gray-400">
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">Verification Guide</h4>
+                        <p class="text-gray-700 mb-4">Understand how to verify the authenticity of blockchain certificates instantly.</p>
+                        <a href="#" class="text-red-600 font-semibold hover:underline">Read Guide →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- API Reference -->
+            <div class="retro-card p-10 rounded-lg shadow-lg mb-8">
+                <h3 class="text-3xl font-bold gradient-text mb-6">⚙️ API Reference</h3>
+                <p class="text-gray-700 mb-6">Developers can integrate Olympianz into their applications using our REST API.</p>
+                <div class="bg-gradient-to-r from-gray-100 to-gray-200 p-6 rounded-lg border-2 border-gray-400">
+                    <code class="text-sm text-gray-800 block mb-4">GET /api/certificates/:id - Retrieve certificate details</code>
+                    <code class="text-sm text-gray-800 block mb-4">POST /api/certificates - Create new certificate</code>
+                    <code class="text-sm text-gray-800 block mb-4">PUT /api/certificates/:id - Update certificate</code>
+                    <code class="text-sm text-gray-800 block">DELETE /api/certificates/:id - Revoke certificate</code>
+                </div>
+                <a href="#" class="inline-block mt-6 bg-gradient-to-r from-blue-500 to-indigo-700 hover:from-blue-600 hover:to-indigo-800 text-white font-bold py-3 px-8 rounded-lg transition duration-200 shadow-lg">View Full API Docs →</a>
+            </div>
+
+            <!-- Video Tutorials -->
+            <div class="retro-card p-10 rounded-lg shadow-lg mb-8">
+                <h3 class="text-3xl font-bold gradient-text mb-6">🎬 Video Tutorials</h3>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-gray-200 p-6 rounded-lg border-2 border-gray-400 text-center">
+                        <p class="text-4xl mb-3">▶️</p>
+                        <h4 class="font-bold text-gray-800 mb-2">Getting Started (5 min)</h4>
+                        <p class="text-gray-700 text-sm">Overview of the platform features</p>
+                    </div>
+                    <div class="bg-gray-200 p-6 rounded-lg border-2 border-gray-400 text-center">
+                        <p class="text-4xl mb-3">▶️</p>
+                        <h4 class="font-bold text-gray-800 mb-2">Issuing Certificates (10 min)</h4>
+                        <p class="text-gray-700 text-sm">Step-by-step certificate issuance</p>
+                    </div>
+                    <div class="bg-gray-200 p-6 rounded-lg border-2 border-gray-400 text-center">
+                        <p class="text-4xl mb-3">▶️</p>
+                        <h4 class="font-bold text-gray-800 mb-2">Verification Process (7 min)</h4>
+                        <p class="text-gray-700 text-sm">How to verify credentials</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Downloads -->
+            <div class="retro-card p-10 rounded-lg shadow-lg">
+                <h3 class="text-3xl font-bold gradient-text mb-6">⬇️ Downloads</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <button class="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white font-bold py-4 px-6 rounded-lg transition duration-200 shadow-lg">📄 Download Whitepaper</button>
+                    <button class="bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white font-bold py-4 px-6 rounded-lg transition duration-200 shadow-lg">💾 Download Smart Contract</button>
+                    <button class="bg-gradient-to-r from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800 text-white font-bold py-4 px-6 rounded-lg transition duration-200 shadow-lg">📱 Download Mobile App</button>
+                    <button class="bg-gradient-to-r from-orange-500 to-orange-700 hover:from-orange-600 hover:to-orange-800 text-white font-bold py-4 px-6 rounded-lg transition duration-200 shadow-lg">🔧 Download SDK</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="py-20 px-6 text-gray-800 bg-gradient-to-b from-gray-300 to-gray-500 mt-20">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+            
+            <div class="text-center md:text-left">
+                <div class="copyRight mb-3">
+                    <p>&copy; Olympianz – Secure. Transparent. Yours.</p>
+                </div>
+                
+                <div class="developersInfo text-sm">
+                    <span>Developed by: </span>
+                    <a href="imgs/Salman-Ud-Din-Front-End-Developer.pdf" target="_blank" class="font-semibold hover:underline">
+                        Sidharth S
+                    </a>
+                    <span class="mx-1">|</span>
+                    <a href="imgs/Arsalan-Khan-Front-End-Developer.pdf" target="_blank" class="font-semibold hover:underline">
+                        Sushmitha
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center md:text-right">
+                <div class="font-bold mb-3 text-lg">Quick Links</div>
+                
+                <ul class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 font-medium">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="admin.html" class="hover:underline">Admin</a></li>
+                    <li><a href="student.html" class="hover:underline">Students</a></li>
+                    <li><a href="about.html" class="hover:underline">About Us</a></li>
+                    <li><a href="faqs.html" class="hover:underline">FAQ's</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

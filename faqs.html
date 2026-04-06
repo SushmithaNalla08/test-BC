@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❓ FAQs - Olympianz</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen text-black font-sans">
+    
+    <!-- ================= HEADER / TOP NAVIGATION ================= -->
+    <header class="relative z-50">
+        
+        <!-- Background Glow Effects -->
+        <div class="absolute inset-0 opacity-50 pointer-events-none">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-cyan-300 rounded-full filter blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-lime-300 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+        </div>
+
+        <!-- Main Header Content -->
+        <div class="relative container mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between">
+            
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-4 mb-6 md:mb-0 hover:opacity-80 transition">
+                <img src="logo.png" alt="Olympianz Logo" class="h-16 w-16 md:h-20 md:w-20 drop-shadow-lg">
+                <h1 class="text-4xl md:text-5xl font-extrabold gradient-text drop-shadow-2xl">
+                    Olympianz
+                </h1>
+            </a>
+
+            <!-- Navigation Bar -->
+            <nav class="py-4 px-10 mt-6 md:mt-0 shadow-2xl">
+                <ul class="flex flex-wrap justify-center gap-8 md:gap-12 text-lg font-medium">
+                    
+                    <li><a href="index.html" class="hover:text-lime-600 transition">Home</a></li>
+
+                    <!-- Products Dropdown -->
+                    <li class="relative group">
+                        <button class="hover:text-lime-600 transition flex items-center">
+                            Products
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+
+                        <div class="dropdown w-64 shadow-xl py-5 px-8 text-center">
+                            <a href="admin.html" class="block py-3 hover:text-lime-600 transition">Admin Dashboard</a>
+                            <a href="student.html" class="block py-3 hover:text-lime-600 transition">Student Dashboard</a>
+                            <a href="verify.html" class="block py-3 hover:text-lime-600 transition">Verifier</a>
+                        </div>
+                    </li>
+
+                    <li><a href="resources.html" class="hover:text-lime-600 transition">Resources</a></li>
+                    <li><a href="about.html" class="hover:text-lime-600 transition">About</a></li>
+                    <li><a href="community.html" class="hover:text-lime-600 transition">Community</a></li>
+                    <li><a href="faqs.html" class="hover:text-lime-600 transition">FAQ</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <div class="py-16 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl font-bold gradient-text mb-4 text-center">❓ Frequently Asked Questions</h2>
+            <p class="text-center text-lg text-gray-700 mb-16">Find answers to common questions about Olympianz</p>
+
+            <!-- General Questions -->
+            <div class="retro-card p-10 rounded-lg shadow-lg mb-8">
+                <h3 class="text-3xl font-bold gradient-text mb-8">🤔 General Questions</h3>
+                <div class="space-y-6">
+                    <details class="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-lg border-l-4 border-blue-500 cursor-pointer">
+                        <summary class="font-bold text-gray-800 text-lg">What is Olympianz?</summary>
+                        <p class="text-gray-700 mt-4">Olympianz is a blockchain-based certificate verification system that provides secure, transparent, and immutable credential management. It allows educational institutions to issue certificates, students to own their digital credentials, and anyone to verify their authenticity instantly.</p>
+                    </details>
+
+                    <details class="bg-gradient-to-r from-green-50 to-lime-50 p-6 rounded-lg border-l-4 border-green-500 cursor-pointer">
+                        <summary class="font-bold text-gray-800 text-lg">How does blockchain make certificates secure?</summary>
+                        <p class="text-gray-700 mt-4">Blockchain creates an immutable ledger of all certificates. Once issued, a certificate cannot be changed, deleted, or forged. Every transaction is cryptographically verified and recorded permanently, making fraud virtually impossible.</p>
+                    </details>
+
+                    <details class="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg border-l-4 border-purple-500 cursor-pointer">
+                        <summary class="font-bold text-gray-800 text-lg">How much does it cost to use Olympianz?</summary>
+                        <p class="text-gray-700 mt-4">Our platform offers flexible pricing models. Students and verifiers can use the platform for free. Institutions can choose from various subscription plans based on their needs. Contact our sales team for custom enterprise solutions.</p>
+                    </details>
+
+                    <details class="bg-gradient-to-r from-orange-50 to-red-50 p-6 rounded-lg border-l-4 border-orange-500 cursor-pointer">
+                        <summary class="font-bold text-gray-800 text-lg">Is my data safe and private?</summary>
+                        <p class="text-gray-700 mt-4">Yes. We use military-grade encryption for all data. Your personal information is only visible to you and the institutions you authorize. Blockchain records are transparent but anonymized with wallet addresses.</p>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Student Questions -->
+            <div class="retro-card p-10 rounded-lg shadow-lg mb-8">
+                <h3 class="text-3xl font-bold gradient-text mb-8">🎓 For Students</h3>
+                <div class="space-y-6">
+                    <details class="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-lg border-l-4 border-blue-500 cursor-pointer">
+                        <summary class="font-bold text-gray-800 text-lg">How do I access my certificates?</summary>
+                        <p class="text-gray-700 mt-4">Simply log in to your student dashboard using your wallet credentials. All certificates issued to you will appear there. You can view, download, or share them instantly.</p>
+                    </details>
+
+                    <details class="bg-gradient-to-r from-green-50 to-lime-50 p-6 rounded-lg border-l-4 border-green-500 cursor-pointer">
+                        <summary class="font-bold text-gray-800 text-lg">Can I download my certificates?</summary>
+                        <p class="text-gray-700 mt-4">Yes! You can download certificates as PDF files anytime from your dashboard. You can also share a verification link with employers or other institutions.</p>
+                    </details>
+
+                    <details class="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg border-l-4 border-purple-500 cursor-pointer">
+                        <summary class="font-bold text-gray-800 text-lg">What is a wallet address?</summary>
+                        <p class="text-gray-700 mt-4">A wallet address is your unique identifier on the blockchain, similar to a bank account number. It's generated when you connect with MetaMask or another Web3 wallet. This is where your certificates are recorded.</p>
+                    </details>
+
+                    <details class="bg-gradient-to-r from-orange-50 to-red-50 p-6 rounded-lg border-l-4 border-orange-500 cursor-pointer">
+                        <summary class="font-bold text-gray-800 text-lg">How do I set up a wallet?</summary>
+                        <p class="text-gray-700 mt-4">Download MetaMask from metamask.io, create an account, and follow the setup instructions. Once created, you'll have your wallet address ready to use with Olympianz.</p>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Admin Questions -->
+            <div class="retro-card p-10 rounded-lg shadow-lg mb-8">
+                <h3 class="text-3xl font-bold gradient-text mb-8">👨‍💼 For Administrators</h3>
+                <div class="space-y-6">
+                    <details class="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-lg border-l-4 border-blue-500 cursor-pointer">
+                        <summary class="font-bold text-gray-800 text-lg">How do I issue a certificate?</summary>
+                        <p class="text-gray-700 mt-4">Log into the Admin Dashboard, fill in the student's details, course information, and upload the certificate PDF. Click "Issue Certificate" and it will be recorded permanently on the blockchain.</p>
+                    </details>
+
+                    <details class="bg-gradient-to-r from-green-50 to-lime-50 p-6 rounded-lg border-l-4 border-green-500 cursor-pointer">
+                        <summary class="font-bold text-gray-800 text-lg">Can I revoke a certificate?</summary>
+                        <p class="text-gray-700 mt-4">Yes, administrators can revoke certificates if needed. Once revoked, the certificate will be marked as invalid and will fail verification. This action is recorded on the blockchain.</p>
+                    </details>
+
+                    <details class="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg border-l-4 border-purple-500 cursor-pointer">
+                        <summary class="font-bold text-gray-800 text-lg">How do I batch issue certificates?</summary>
+                        <p class="text-gray-700 mt-4">You can upload a CSV file with student details to issue multiple certificates at once. This saves time and ensures consistency across large issuances.</p>
+                    </details>
+
+                    <details class="bg-gradient-to-r from-orange-50 to-red-50 p-6 rounded-lg border-l-4 border-orange-500 cursor-pointer">
+                        <summary class="font-bold text-gray-800 text-lg">What reports are available?</summary>
+                        <p class="text-gray-700 mt-4">The admin panel provides detailed reports on issued, verified, and revoked certificates, as well as user activity logs and blockchain transactions.</p>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Technical Questions -->
+            <div class="retro-card p-10 rounded-lg shadow-lg mb-8">
+                <h3 class="text-3xl font-bold gradient-text mb-8">⚙️ Technical Questions</h3>
+                <div class="space-y-6">
+                    <details class="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-lg border-l-4 border-blue-500 cursor-pointer">
+                        <summary class="font-bold text-gray-800 text-lg">Which blockchain does Olympianz use?</summary>
+                        <p class="text-gray-700 mt-4">Olympianz uses Ethereum for certificate recording and verification. Ethereum provides security, transparency, and widespread adoption in the blockchain ecosystem.</p>
+                    </details>
+
+                    <details class="bg-gradient-to-r from-green-50 to-lime-50 p-6 rounded-lg border-l-4 border-green-500 cursor-pointer">
+                        <summary class="font-bold text-gray-800 text-lg">Do I need to pay gas fees?</summary>
+                        <p class="text-gray-700 mt-4">When using Ganache (local blockchain) for testing, there are no real fees. On the main Ethereum network, small gas fees apply for certificate issuance, which institutions typically cover.</p>
+                    </details>
+
+                    <details class="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg border-l-4 border-purple-500 cursor-pointer">
+                        <summary class="font-bold text-gray-800 text-lg">Is the platform scalable?</summary>
+                        <p class="text-gray-700 mt-4">Yes. Olympianz is designed to scale from small institutions to large enterprises. We're also exploring Layer 2 solutions for even faster and cheaper transactions.</p>
+                    </details>
+
+                    <details class="bg-gradient-to-r from-orange-50 to-red-50 p-6 rounded-lg border-l-4 border-orange-500 cursor-pointer">
+                        <summary class="font-bold text-gray-800 text-lg">Can I integrate Olympianz with my system?</summary>
+                        <p class="text-gray-700 mt-4">Yes. We provide REST API and SDKs for integration. Our documentation includes examples for common platforms and frameworks.</p>
+                    </details>
+                </div>
+            </div>
+
+            <!-- Support -->
+            <div class="retro-card p-10 rounded-lg shadow-lg">
+                <h3 class="text-3xl font-bold gradient-text mb-6 text-center">🆘 Still Have Questions?</h3>
+                <p class="text-gray-800 text-lg mb-8 text-center">Can't find your answer? Reach out to Sidharth directly!</p>
+                
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="mailto:sidharthsanil2655@gmail.com" class="retro-card bg-gradient-to-r from-red-500 to-orange-600 hover:from-red-600 hover:to-orange-700 text-white font-bold py-4 px-8 rounded-lg transition duration-200 shadow-lg text-center text-lg">📧 Send Email</a>
+                    <a href="https://wa.me/918848353935" target="_blank" class="retro-card bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white font-bold py-4 px-8 rounded-lg transition duration-200 shadow-lg text-center text-lg">💬 WhatsApp Now</a>
+                    <a href="https://instagram.com/Sid_26_05" target="_blank" class="retro-card bg-gradient-to-r from-pink-500 to-red-600 hover:from-pink-600 hover:to-red-700 text-white font-bold py-4 px-8 rounded-lg transition duration-200 shadow-lg text-center text-lg">📷 Instagram DM</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="py-20 px-6 text-gray-800 bg-gradient-to-b from-gray-300 to-gray-500 mt-20">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+            
+            <div class="text-center md:text-left">
+                <div class="copyRight mb-3">
+                    <p>&copy; Olympianz – Secure. Transparent. Yours.</p>
+                </div>
+                
+                <div class="developersInfo text-sm">
+                    <span>Developed by: </span>
+                    <a href="imgs/Salman-Ud-Din-Front-End-Developer.pdf" target="_blank" class="font-semibold hover:underline">
+                        Sidharth S
+                    </a>
+                    <span class="mx-1">|</span>
+                    <a href="imgs/Arsalan-Khan-Front-End-Developer.pdf" target="_blank" class="font-semibold hover:underline">
+                        Sushmitha
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center md:text-right">
+                <div class="font-bold mb-3 text-lg">Quick Links</div>
+                
+                <ul class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 font-medium">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="admin.html" class="hover:underline">Admin</a></li>
+                    <li><a href="student.html" class="hover:underline">Students</a></li>
+                    <li><a href="about.html" class="hover:underline">About Us</a></li>
+                    <li><a href="faqs.html" class="hover:underline">FAQ's</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth accordion functionality
+        document.querySelectorAll('details').forEach(detail => {
+            detail.addEventListener('click', () => {
+                document.querySelectorAll('details').forEach(otherDetail => {
+                    if (otherDetail !== detail) {
+                        otherDetail.removeAttribute('open');
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

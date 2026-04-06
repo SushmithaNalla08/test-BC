@@ -1,0 +1,168 @@
+/* FULL CSS — IDENTICAL TO RESOURCE DESIGN */
+body {
+    background: linear-gradient(to bottom, #00bfff, #1e90ff, #4682b4);
+    font-family: 'Arial', sans-serif;
+    color: #000;
+}
+h1, h2 {
+    font-family: 'Courier New', monospace;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+.gradient-text {
+    background: linear-gradient(90deg, #00ff00, #00ffff, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+nav {
+    background: linear-gradient(to bottom, #e0e0e0, #c0c0c0);
+    border: 2px outset #808080;
+    border-radius: 8px;
+}
+nav a, nav button {
+    text-shadow: 0 1px 0 #fff;
+}
+@keyframes orbit {
+    0% { transform: rotate(0deg) translateX(120px) rotate(0deg); }
+    100% { transform: rotate(360deg) translateX(120px) rotate(-360deg); }
+}
+.orbit { animation: orbit 30s linear infinite; }
+.orbit-reverse { animation: orbit 35s linear infinite reverse; }
+.retro-card {
+    background: linear-gradient(to bottom, #f0f0f0, #d0d0d0);
+    border: 3px inset #a0a0a0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+.central-badge {
+    background: linear-gradient(to bottom, #808080, #404040);
+    border: 4px outset #c0c0c0;
+    box-shadow: inset 0 0 10px rgba(255,255,255,0.5);
+}
+.dashed-border {
+    border: 4px dashed #00ff00;
+    animation: spin-slow 60s linear infinite;
+}
+@keyframes spin-slow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.icon-bg {
+    background: radial-gradient(circle, #ffff00, #ff9900);
+    border: 2px solid #000;
+    box-shadow: 2px 2px 0 #000;
+}
+.group:hover .dropdown { display: block; }
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+    background: linear-gradient(to bottom, #e0e0e0, #c0c0c0);
+    border: 2px outset #808080;
+    border-radius: 8px;
+}
+a:hover .retro-card {
+    border-style: outset;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.developersInfo{
+    display:flex;
+    gap:9px;
+    position:absolute;
+}
+
+.footerSection3{
+    position: absolute;
+    right: 200px;
+    
+    
+}
+
+/* Mobile Responsive Enhancements */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    /* Reduce glow effects on mobile */
+    .absolute.top-0.left-0,
+    .absolute.bottom-0.right-0 {
+        width: 200px !important;
+        height: 200px !important;
+    }
+    
+    /* Better button sizing for touch */
+    button {
+        min-height: 48px;
+        min-width: 44px;
+    }
+    
+    /* Better input sizing for mobile */
+    input, textarea {
+        min-height: 44px;
+        font-size: 16px;
+    }
+    
+    /* Responsive text sizes */
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+    }
+    
+    /* Better spacing on mobile */
+    .px-6 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /* Dropdown positioning fix */
+    .dropdown {
+        width: 90vw;
+        max-width: 300px;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+    
+    /* Hide desktop navigation on mobile */
+    nav.hidden.md\:block {
+        display: none !important;
+    }
+    
+    /* Footer responsive */
+    footer {
+        padding: 1rem;
+    }
+    
+    .developersInfo {
+        position: static;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+    
+    .footerSection3 {
+        position: static;
+        right: auto;
+    }
+}
+
+@media (min-width: 769px) {
+    /* Hide mobile menu on desktop */
+    #mobileMenu {
+        display: none !important;
+    }
+    
+    #mobileMenuBtn {
+        display: none !important;
+    }
+}

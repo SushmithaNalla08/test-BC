@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌍 Community - Olympianz</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen text-black font-sans">
+    
+    <!-- ================= HEADER / TOP NAVIGATION ================= -->
+    <header class="relative z-50">
+        
+        <!-- Background Glow Effects -->
+        <div class="absolute inset-0 opacity-50 pointer-events-none">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-cyan-300 rounded-full filter blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-lime-300 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+        </div>
+
+        <!-- Main Header Content -->
+        <div class="relative container mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between">
+            
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-4 mb-6 md:mb-0 hover:opacity-80 transition">
+                <img src="logo.png" alt="Olympianz Logo" class="h-16 w-16 md:h-20 md:w-20 drop-shadow-lg">
+                <h1 class="text-4xl md:text-5xl font-extrabold gradient-text drop-shadow-2xl">
+                    Olympianz
+                </h1>
+            </a>
+
+            <!-- Navigation Bar -->
+            <nav class="py-4 px-10 mt-6 md:mt-0 shadow-2xl">
+                <ul class="flex flex-wrap justify-center gap-8 md:gap-12 text-lg font-medium">
+                    
+                    <li><a href="index.html" class="hover:text-lime-600 transition">Home</a></li>
+
+                    <!-- Products Dropdown -->
+                    <li class="relative group">
+                        <button class="hover:text-lime-600 transition flex items-center">
+                            Products
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+
+                        <div class="dropdown w-64 shadow-xl py-5 px-8 text-center">
+                            <a href="admin.html" class="block py-3 hover:text-lime-600 transition">Admin Dashboard</a>
+                            <a href="student.html" class="block py-3 hover:text-lime-600 transition">Student Dashboard</a>
+                            <a href="verify.html" class="block py-3 hover:text-lime-600 transition">Verifier</a>
+                        </div>
+                    </li>
+
+                    <li><a href="resources.html" class="hover:text-lime-600 transition">Resources</a></li>
+                    <li><a href="about.html" class="hover:text-lime-600 transition">About</a></li>
+                    <li><a href="community.html" class="hover:text-lime-600 transition">Community</a></li>
+                    <li><a href="faqs.html" class="hover:text-lime-600 transition">FAQ</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <div class="py-16 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-5xl font-bold gradient-text mb-4 text-center">🌍 Community</h2>
+            <p class="text-center text-lg text-gray-700 mb-16">Join thousands of users revolutionizing credential verification</p>
+
+            <!-- Community Stats -->
+            <div class="grid md:grid-cols-4 gap-6 mb-12">
+                <div class="retro-card p-8 rounded-lg shadow-lg text-center">
+                    <p class="text-5xl font-bold gradient-text mb-2">10K+</p>
+                    <p class="text-gray-800 font-semibold">Active Users</p>
+                </div>
+                <div class="retro-card p-8 rounded-lg shadow-lg text-center">
+                    <p class="text-5xl font-bold gradient-text mb-2">50K+</p>
+                    <p class="text-gray-800 font-semibold">Certificates Issued</p>
+                </div>
+                <div class="retro-card p-8 rounded-lg shadow-lg text-center">
+                    <p class="text-5xl font-bold gradient-text mb-2">100+</p>
+                    <p class="text-gray-800 font-semibold">Institutions</p>
+                </div>
+                <div class="retro-card p-8 rounded-lg shadow-lg text-center">
+                    <p class="text-5xl font-bold gradient-text mb-2">24/7</p>
+                    <p class="text-gray-800 font-semibold">Support Available</p>
+                </div>
+            </div>
+
+            <!-- Social Channels -->
+            <div class="retro-card p-10 rounded-lg shadow-lg mb-8">
+                <h3 class="text-3xl font-bold gradient-text mb-8 text-center">📱 Connect With Us</h3>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <a href="https://instagram.com/Sid_26_05" target="_blank" class="bg-gradient-to-r from-pink-500 to-red-600 hover:from-pink-600 hover:to-red-700 text-white font-bold py-4 px-6 rounded-lg transition duration-200 shadow-lg text-center">
+                        <p class="text-2xl mb-2">📷</p>
+                        <p>Instagram</p>
+                    </a>
+                    <a href="mailto:sidharthsanil2655@gmail.com" class="bg-gradient-to-r from-red-500 to-orange-600 hover:from-red-600 hover:to-orange-700 text-white font-bold py-4 px-6 rounded-lg transition duration-200 shadow-lg text-center">
+                        <p class="text-2xl mb-2">📧</p>
+                        <p>Email</p>
+                    </a>
+                    <a href="https://github.com/Sid-2655" target="_blank" class="bg-gradient-to-r from-gray-700 to-black hover:from-gray-800 hover:to-gray-900 text-white font-bold py-4 px-6 rounded-lg transition duration-200 shadow-lg text-center">
+                        <p class="text-2xl mb-2">💻</p>
+                        <p>GitHub</p>
+                    </a>
+                    <a href="https://wa.me/918848353935" target="_blank" class="bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white font-bold py-4 px-6 rounded-lg transition duration-200 shadow-lg text-center">
+                        <p class="text-2xl mb-2">💬</p>
+                        <p>WhatsApp</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Discussion Forums -->
+            <div class="retro-card p-10 rounded-lg shadow-lg mb-8">
+                <h3 class="text-3xl font-bold gradient-text mb-8">💬 Discussion Forums</h3>
+                <div class="space-y-4">
+                    <div class="bg-gradient-to-r from-blue-100 to-cyan-100 p-6 rounded-lg border-2 border-gray-400">
+                        <h4 class="font-bold text-gray-800 mb-2">Getting Started</h4>
+                        <p class="text-gray-700 text-sm mb-3">Ask questions and get help with setting up your account and first steps.</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:underline">Visit Forum →</a>
+                    </div>
+                    <div class="bg-gradient-to-r from-green-100 to-lime-100 p-6 rounded-lg border-2 border-gray-400">
+                        <h4 class="font-bold text-gray-800 mb-2">Feature Requests & Ideas</h4>
+                        <p class="text-gray-700 text-sm mb-3">Suggest new features and vote on improvements you'd like to see.</p>
+                        <a href="#" class="text-green-600 font-semibold hover:underline">Visit Forum →</a>
+                    </div>
+                    <div class="bg-gradient-to-r from-purple-100 to-pink-100 p-6 rounded-lg border-2 border-gray-400">
+                        <h4 class="font-bold text-gray-800 mb-2">Technical Discussions</h4>
+                        <p class="text-gray-700 text-sm mb-3">Deep dive conversations about blockchain, smart contracts, and architecture.</p>
+                        <a href="#" class="text-purple-600 font-semibold hover:underline">Visit Forum →</a>
+                    </div>
+                    <div class="bg-gradient-to-r from-orange-100 to-red-100 p-6 rounded-lg border-2 border-gray-400">
+                        <h4 class="font-bold text-gray-800 mb-2">Announcements</h4>
+                        <p class="text-gray-700 text-sm mb-3">Stay updated with the latest news, releases, and important announcements.</p>
+                        <a href="#" class="text-orange-600 font-semibold hover:underline">Visit Forum →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Meetups & Events -->
+            <div class="retro-card p-10 rounded-lg shadow-lg mb-8">
+                <h3 class="text-3xl font-bold gradient-text mb-8">🎉 Upcoming Events</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-br from-blue-100 to-cyan-100 p-6 rounded-lg border-2 border-gray-400">
+                        <h4 class="font-bold text-gray-800 mb-2">Webinar: Getting Started with Olympianz</h4>
+                        <p class="text-gray-700 text-sm mb-3">📅 March 15, 2026 | 2:00 PM UTC</p>
+                        <p class="text-gray-700 text-sm mb-4">Learn the basics from our team of experts.</p>
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-200">Register Now →</button>
+                    </div>
+                    <div class="bg-gradient-to-br from-green-100 to-lime-100 p-6 rounded-lg border-2 border-gray-400">
+                        <h4 class="font-bold text-gray-800 mb-2">Community Hackathon</h4>
+                        <p class="text-gray-700 text-sm mb-3">📅 April 1-3, 2026 | Virtual</p>
+                        <p class="text-gray-700 text-sm mb-4">Build innovative solutions on Olympianz. Win prizes!</p>
+                        <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-200">Learn More →</button>
+                    </div>
+                    <div class="bg-gradient-to-br from-purple-100 to-pink-100 p-6 rounded-lg border-2 border-gray-400">
+                        <h4 class="font-bold text-gray-800 mb-2">Developer Meetup</h4>
+                        <p class="text-gray-700 text-sm mb-3">📅 March 22, 2026 | 6:00 PM UTC</p>
+                        <p class="text-gray-700 text-sm mb-4">Network with developers building on blockchain.</p>
+                        <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded transition duration-200">RSVP →</button>
+                    </div>
+                    <div class="bg-gradient-to-br from-yellow-100 to-orange-100 p-6 rounded-lg border-2 border-gray-400">
+                        <h4 class="font-bold text-gray-800 mb-2">Monthly Q&A Session</h4>
+                        <p class="text-gray-700 text-sm mb-3">📅 Last Friday of every month | 3:00 PM UTC</p>
+                        <p class="text-gray-700 text-sm mb-4">Ask anything about Olympianz directly to the team.</p>
+                        <button class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded transition duration-200">Add to Calendar →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="retro-card p-10 rounded-lg shadow-lg">
+                <h3 class="text-3xl font-bold gradient-text mb-6 text-center">📧 Subscribe to Newsletter</h3>
+                <p class="text-center text-gray-700 mb-8">Get the latest updates, announcements, and exclusive content delivered to your inbox.</p>
+                <div class="flex flex-col md:flex-row gap-4 max-w-2xl mx-auto">
+                    <input type="email" placeholder="Enter your email address" class="flex-1 p-4 border-2 border-gray-400 rounded-lg focus:ring-4 focus:ring-cyan-500 focus:border-cyan-500 bg-white font-medium">
+                    <button class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold py-4 px-8 rounded-lg transition duration-200 shadow-lg">Subscribe</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="py-20 px-6 text-gray-800 bg-gradient-to-b from-gray-300 to-gray-500 mt-20">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+            
+            <div class="text-center md:text-left">
+                <div class="copyRight mb-3">
+                    <p>&copy; Olympianz – Secure. Transparent. Yours.</p>
+                </div>
+                
+                <div class="developersInfo text-sm">
+                    <span>Developed by: </span>
+                    <a href="imgs/Salman-Ud-Din-Front-End-Developer.pdf" target="_blank" class="font-semibold hover:underline">
+                        Sidharth S
+                    </a>
+                    <span class="mx-1">|</span>
+                    <a href="imgs/Arsalan-Khan-Front-End-Developer.pdf" target="_blank" class="font-semibold hover:underline">
+                        Sushmitha
+                    </a>
+                </div>
+            </div>
+
+            <div class="text-center md:text-right">
+                <div class="font-bold mb-3 text-lg">Quick Links</div>
+                
+                <ul class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 font-medium">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="admin.html" class="hover:underline">Admin</a></li>
+                    <li><a href="student.html" class="hover:underline">Students</a></li>
+                    <li><a href="about.html" class="hover:underline">About Us</a></li>
+                    <li><a href="faqs.html" class="hover:underline">FAQ's</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔐 Olympianz – Secure Credentials System</title>
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- Tailwind CDN (Required for layout & utilities) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="min-h-screen text-black font-sans">
+    
+
+    <!-- ================= HEADER / TOP NAVIGATION ================= -->
+    <header class="relative z-50">
+        
+        <!-- Background Glow Effects -->
+        <div class="absolute inset-0 opacity-50 pointer-events-none">
+            <div class="absolute top-0 left-0 w-96 h-96 bg-cyan-300 rounded-full filter blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-lime-300 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+        </div>
+
+        <!-- Main Header Content -->
+        <div class="relative container mx-auto px-4 sm:px-6 py-6 sm:py-8 flex flex-row items-center justify-between">
+            
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-2 sm:gap-4 hover:opacity-80 transition flex-shrink-0">
+                <img src="logo.png" alt="Olympianz Logo" class="h-12 w-12 sm:h-16 sm:w-16 md:h-20 md:w-20 drop-shadow-lg">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold gradient-text drop-shadow-2xl">
+                    Olympianz
+                </h1>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:block py-4 px-8 shadow-2xl">
+                <ul class="flex gap-6 lg:gap-8 text-sm lg:text-lg font-medium">
+                    <li><a href="index.html" class="hover:text-lime-600 transition">Home</a></li>
+                    <li class="relative group">
+                        <button class="hover:text-lime-600 transition flex items-center">
+                            Products
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="dropdown w-56 lg:w-64 shadow-xl py-4 px-6 text-center">
+                            <a href="admin.html" class="block py-2 hover:text-lime-600 transition text-sm">Admin Dashboard</a>
+                            <a href="student.html" class="block py-2 hover:text-lime-600 transition text-sm">Student Dashboard</a>
+                            <a href="verify.html" class="block py-2 hover:text-lime-600 transition text-sm">Verifier</a>
+                        </div>
+                    </li>
+                    <li><a href="resources.html" class="hover:text-lime-600 transition">Resources</a></li>
+                    <li><a href="about.html" class="hover:text-lime-600 transition">About</a></li>
+                    <li><a href="community.html" class="hover:text-lime-600 transition">Community</a></li>
+                    <li><a href="faqs.html" class="hover:text-lime-600 transition">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="md:hidden p-2 hover:bg-gray-200 rounded-lg transition">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <nav id="mobileMenu" class="hidden md:hidden bg-gray-100 px-4 py-4 border-t-2 border-lime-400">
+            <ul class="flex flex-col gap-3 text-sm font-medium">
+                <li><a href="index.html" class="block py-2 px-3 hover:text-lime-600 transition hover:bg-gray-200 rounded">Home</a></li>
+                <li><a href="admin.html" class="block py-2 px-3 hover:text-lime-600 transition hover:bg-gray-200 rounded">Admin Dashboard</a></li>
+                <li><a href="student.html" class="block py-2 px-3 hover:text-lime-600 transition hover:bg-gray-200 rounded">Student Dashboard</a></li>
+                <li><a href="verify.html" class="block py-2 px-3 hover:text-lime-600 transition hover:bg-gray-200 rounded">Verifier</a></li>
+                <li><a href="resources.html" class="block py-2 px-3 hover:text-lime-600 transition hover:bg-gray-200 rounded">Resources</a></li>
+                <li><a href="about.html" class="block py-2 px-3 hover:text-lime-600 transition hover:bg-gray-200 rounded">About</a></li>
+                <li><a href="community.html" class="block py-2 px-3 hover:text-lime-600 transition hover:bg-gray-200 rounded">Community</a></li>
+                <li><a href="faqs.html" class="block py-2 px-3 hover:text-lime-600 transition hover:bg-gray-200 rounded">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= ADMIN SECTION ================= -->
+    <section class="py-12 sm:py-16 md:py-24 px-4 sm:px-6">
+        <a href="admin.html" class="block max-w-6xl mx-auto">
+            <div class="retro-card flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16 p-6 sm:p-8 md:p-12 hover:opacity-90 transition-opacity duration-300">
+
+                <!-- Circle Animation -->
+                <div class="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 flex items-center justify-center cursor-pointer flex-shrink-0">
+                    <div class="absolute inset-0 rounded-full dashed-border opacity-60"></div>
+                    
+                    <div class="absolute w-full h-full">
+                        <div class="orbit absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                            <div class="icon-bg p-5 rounded-lg shadow-lg rotate-45 text-2xl">📄🔑</div>
+                        </div>
+                        <div class="orbit-reverse absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                            <div class="icon-bg p-5 rounded-lg shadow-lg text-2xl">📜✨</div>
+                        </div>
+                        <div class="orbit absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 delay-1000">
+                            <div class="icon-bg p-5 rounded-lg shadow-lg rotate-12 text-2xl">📋🚀</div>
+                        </div>
+                    </div>
+
+                    <div class="central-badge relative z-10 rounded-full w-52 h-52 flex items-center justify-center">
+                        <span class="text-6xl font-black gradient-text">ADMIN</span>
+                    </div>
+                </div>
+
+                <!-- Text -->
+                <div class="max-w-xl p-4 sm:p-6 md:p-8 text-center md:text-left">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-8 gradient-text">Admin Control Center</h2>
+                    <p class="text-sm sm:text-base md:text-lg leading-relaxed mb-4 md:mb-6">
+                        Issue certificates, revoke existing ones, and manage all blockchain records with complete control and transparency.
+                    </p>
+                    <p class="text-sm sm:text-base md:text-lg leading-relaxed">
+                        Secure, immutable, and verifiable on the blockchain for ultimate credibility and trust.
+                    </p>
+                </div>
+
+            </div>
+        </a>
+    </section>
+
+    <!-- ================= STUDENT SECTION ================= -->
+    <section class="py-24 px-6 bg-gradient-to-br from-blue-200/50 to-cyan-200/50">
+        <a href="student.html" class="block max-w-6xl mx-auto">
+            <div class="retro-card flex flex-col md:flex-row-reverse items-center justify-between gap-16 p-12 hover:opacity-90 transition-opacity duration-300">
+
+                <div class="relative w-80 h-80 md:w-96 md:h-96 flex items-center justify-center cursor-pointer">
+                    <div class="absolute inset-0 rounded-full dashed-border opacity-60"></div>
+                    
+                    <div class="absolute w-full h-full">
+                        <div class="orbit absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                            <div class="icon-bg p-5 rounded-lg shadow-lg text-2xl">🎓📜</div>
+                        </div>
+                        <div class="orbit-reverse absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                            <div class="icon-bg p-5 rounded-lg shadow-lg text-2xl">🏆🔗</div>
+                        </div>
+                        <div class="orbit absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 delay-1000">
+                            <div class="icon-bg p-5 rounded-lg shadow-lg rotate-12 text-2xl">📲✨</div>
+                        </div>
+                    </div>
+
+                    <div class="central-badge relative z-10 rounded-full w-52 h-52 flex items-center justify-center">
+                        <span class="text-6xl font-black gradient-text">STUDENT</span>
+                    </div>
+                </div>
+
+                <div class="max-w-xl p-8">
+                    <h2 class="text-5xl font-bold mb-8 gradient-text">Your Digital Credentials</h2>
+                    <p class="text-lg leading-relaxed mb-6">
+                        View, download, and share your blockchain-verified certificates securely and instantly...
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        All records are immutable, transparent, and owned by you forever...
+                    </p>
+                </div>
+
+            </div>
+        </a>
+    </section>
+
+    <!-- ================= VERIFIER SECTION ================= -->
+    <section class="py-24 px-6">
+        <a href="verify.html" class="block max-w-6xl mx-auto">
+            <div class="retro-card flex flex-col md:flex-row items-center justify-between gap-16 p-12 hover:opacity-90 transition-opacity duration-300">
+
+                <div class="relative w-80 h-80 md:w-96 md:h-96 flex items-center justify-center cursor-pointer">
+                    <div class="absolute inset-0 rounded-full dashed-border opacity-60"></div>
+                    
+                    <div class="absolute w-full h-full">
+                        <div class="orbit absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                            <div class="icon-bg p-5 rounded-lg shadow-lg text-2xl">✅🔍</div>
+                        </div>
+                        <div class="orbit-reverse absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                            <div class="icon-bg p-5 rounded-lg shadow-lg text-2xl">📄✔️</div>
+                        </div>
+                        <div class="orbit absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 delay-1000">
+                            <div class="icon-bg p-5 rounded-lg shadow-lg rotate-12 text-2xl">🔒✨</div>
+                        </div>
+                    </div>
+
+                    <div class="central-badge relative z-10 rounded-full w-52 h-52 flex items-center justify-center">
+                        <span class="text-6xl font-black gradient-text">VERIFIER</span>
+                    </div>
+                </div>
+
+                <div class="max-w-xl p-8">
+                    <h2 class="text-5xl font-bold mb-8 gradient-text">Instant Verification</h2>
+                    <p class="text-lg leading-relaxed mb-6">
+                        Validate any certificate by ID or PDF upload — trustless, fast, and secure...
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Powered by blockchain — no central authority needed...
+                    </p>
+                </div>
+
+            </div>
+        </a>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+  <footer class="py-20 px-6 text-gray-800 bg-gradient-to-b from-gray-300 to-gray-500">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
+    
+    <div class="text-center md:text-left">
+      <div class="copyRight mb-3">
+        <p>&copy; Olympianz – Secure. Transparent. Yours.</p>
+      </div>
+      
+      <div class="developersInfo text-sm">
+        <span>Developed by: </span>
+        <a href="imgs/Salman-Ud-Din-Front-End-Developer.pdf" target="_blank" class="font-semibold hover:underline">
+          Sidharth S
+        </a>
+        <span class="mx-1">|</span>
+        <a href="imgs/Arsalan-Khan-Front-End-Developer.pdf" target="_blank" class="font-semibold hover:underline">
+          Sushmitha
+        </a>
+      </div>
+    </div>
+
+    <div class="text-center md:text-right">
+      <div class="font-bold mb-3 text-lg">Quick Links</div>
+      
+      <ul class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2 font-medium">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="admin.html" class="hover:underline">Admin </a></li>
+        <li><a href="student.html" class="hover:underline">Students </a></li>
+        <li><a href="ownersInfo.html" class="hover:underline">About Us</a></li>
+        <li><a href="faqs.html" class="hover:underline">FAQ's</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+   
+
+    <!-- Scripts -->
+    <script src="mobile-nav.js"></script>
+</body>
+</html>
