@@ -139,21 +139,23 @@ document.getElementById('issueBtn').onclick = async () => {
 
         if (!certId) {
             // Last resort: surface the raw receipt for debugging
+            const pdfUrl = CONFIG.PINATA_GATEWAY + ipfsHash;
             issueResult.innerHTML = `
                 <strong>Certificate transaction sent.</strong><br>
                 <strong>Note:</strong> Could not extract Certificate ID.<br>
                 <details class="mt-2 p-2 bg-white rounded"><summary class="font-medium">Show receipt (for debugging)</summary><pre style="white-space:pre-wrap;max-height:240px;overflow:auto">${JSON.stringify(receipt, null, 2)}</pre></details>
                 <strong>IPFS CID:</strong> ${ipfsHash}<br>
                 <strong>PDF Hash:</strong> ${pdfHash}<br>
-                <a href="https://gateway.pinata.cloud/ipfs/${ipfsHash}" target="_blank" class="text-indigo-600 underline">View PDF</a>
+                <a href="${pdfUrl}" target="_blank" class="text-indigo-600 underline">View PDF</a>
             `;
         } else {
+            const pdfUrl = CONFIG.PINATA_GATEWAY + ipfsHash;
             issueResult.innerHTML = `
                 <strong>✅ Certificate issued successfully!</strong><br>
                 <strong>Certificate ID:</strong> <code>${certId}</code><br>
                 <strong>IPFS CID:</strong> <code>${ipfsHash}</code><br>
                 <strong>PDF Hash:</strong> <code>${pdfHash}</code><br>
-                <a href="https://gateway.pinata.cloud/ipfs/${ipfsHash}" target="_blank" class="text-indigo-600 underline font-bold">📥 View PDF on IPFS</a>
+                <a href="${pdfUrl}" target="_blank" class="text-indigo-600 underline font-bold">📥 View PDF on IPFS</a>
             `;
         }
         issueResult.style.display = 'block';
@@ -220,7 +222,7 @@ document.getElementById('verifyPdfBtn').onclick = async () => {
 
 function displayCert(cert, resultDivId) {
     const date = new Date(Number(cert.issueDate) * 1000).toLocaleString();
-    const ipfsLink = `https://gateway.pinata.cloud/ipfs/${cert.ipfsHash}`;
+    const ipfsLink = CONFIG.PINATA_GATEWAY + cert.ipfsHash;
     document.getElementById(resultDivId).innerHTML = `
         <h4 class="font-bold text-lg mb-2">Certificate Details</h4>
         <p><span class="font-medium">Student:</span> ${cert.studentName}</p>

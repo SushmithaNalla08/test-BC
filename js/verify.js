@@ -63,7 +63,7 @@ document.getElementById('verifyPdfBtn').onclick = async () => {
 
 function displayCert(cert) {
     const date = new Date(Number(cert.issueDate) * 1000).toLocaleString();
-    const ipfsLink = `https://gateway.pinata.cloud/ipfs/${cert.ipfsHash}`;
+    const ipfsLink = CONFIG.PINATA_GATEWAY + cert.ipfsHash;
     document.getElementById('result').innerHTML = `
         <h3 class="text-xl font-bold text-green-600 mb-3">✅ Valid Certificate</h3>
         <p><span class="font-medium">Student:</span> ${cert.studentName}</p>

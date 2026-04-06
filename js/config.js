@@ -3,6 +3,12 @@ const CONFIG = {
     // Contract address – update this once after redeploying
     CONTRACT_ADDRESS: "0x1Eda52E0776072261874bD05D8d908dCe588Aa71",
 
+    // ✅ Pinata Gateway URL - Your working dedicated gateway
+    PINATA_GATEWAY: "https://scarlet-quick-rabbit-187.mypinata.cloud/ipfs/",
+    
+    // Or use a public gateway as fallback:
+    // PINATA_GATEWAY: "https://gateway.pinata.cloud/ipfs/",
+
     // Full ABI from Remix (same for all pages)
     CONTRACT_ABI: [
         {

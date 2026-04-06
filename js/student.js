@@ -28,7 +28,7 @@ document.getElementById('loadCerts').onclick = async () => {
     for (let id of certIds) {
         const cert = await contract.methods.verifyCertificate(id).call();
         const date = new Date(Number(cert.issueDate) * 1000).toLocaleDateString();
-        const ipfsLink = `https://gateway.pinata.cloud/ipfs/${cert.ipfsHash}`;
+        const ipfsLink = CONFIG.PINATA_GATEWAY + cert.ipfsHash;
         listDiv.innerHTML += `
             <div class="bg-white p-5 rounded-lg shadow-md border-l-4 border-indigo-500">
                 <div class="flex justify-between items-start">
